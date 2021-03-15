@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "OWO Extension",
+    "version": "1.0",
+    "description": "An extension that OWO-fies your websites!",
+    "author": "Shabrina Yusri",
+    
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
