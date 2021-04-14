@@ -14,6 +14,9 @@ cd owo-extension
 
 add contents of backend/ in this folder
 
+Also reassign write permissions in /var/www:
+chown -hR www-data:www-data html
+
 Then in Google Chrome Extensions, load the extension/ folder.
 
 Then to get the server running (assuming logged in as root using sudo -s):
