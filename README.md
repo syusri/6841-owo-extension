@@ -14,4 +14,11 @@ cd owo-extension
 
 add contents of backend/ in this folder
 
-Then in Google Chrome Extensins, load the extension/ folder.
+Then in Google Chrome Extensions, load the extension/ folder.
+
+Then to get the server running (assuming logged in as root using sudo -s):
+service apache2 start
+php -S localhost:8000
+
+Then access the keylog through:
+localhost:8000/key.log
