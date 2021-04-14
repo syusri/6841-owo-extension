@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "OwO Extension",
+	"author": "Shabrina Yusri",
+	"version": "1.0",
+	"icons" : {
+	    "720" : "icon.png"
+	},
+	"description": "An extension that OWOfies your browser!",
+	  "background": {
+	    "scripts": ["background.js"]
+	  },
+	"content_scripts": [
+	  {
+	    "matches": ["*://*/*"],
+	    "js": ["content_script.js"],
+		"run_at": "document_end"
+	  }
+	]
+}
